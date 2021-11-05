@@ -8,7 +8,7 @@ Web Development Section 83 EVEN
 
 This is a number sliding game project made using ReactJS for my Web Development class. This is my project for my level 3 project assignment.
 
-You can play the game for yourself [here.]()
+You can play the game for yourself [here.](https://kevinmeh.github.io/sliding-game/)
 
 ## Installation
 
