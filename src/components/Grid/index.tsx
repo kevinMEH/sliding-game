@@ -153,25 +153,22 @@ const Grid = () => {
                 }
             }
             
-            let swapBlock = document.getElementsByClassName("Block--item" + swapTarget)[0];
-            let swapBlockWrapper = swapBlock.parentElement;
+            let swapBlockWrapper = document.getElementsByClassName("index" + swapTarget)[0];
+            let swapBlock = swapBlockWrapper.children[0];
             
             console.log(emptyBlockWrapper);
             console.log(swapBlockWrapper);
             
             emptyBlockWrapper!.innerHTML = "";
-            swapBlockWrapper!.innerHTML = "";
-            
-            console.log(emptyBlockWrapper);
-            console.log(swapBlockWrapper);
+            swapBlockWrapper.innerHTML = "";
             
             emptyBlockWrapper!.innerHTML = swapBlock.outerHTML;
-            swapBlockWrapper!.innerHTML = emptyBlock.outerHTML;
+            swapBlockWrapper.innerHTML = emptyBlock.outerHTML;
             
             sourceContainer = document.getElementsByClassName('Block--item15')[0] as HTMLElement;
             
-            let indexIndex = swapBlockWrapper!.className.indexOf("index");
-            emptyWrapperRef.current = +(swapBlockWrapper!.className.substring(indexIndex + 5, indexIndex + 7).trim());
+            let indexIndex = swapBlockWrapper.className.indexOf("index");
+            emptyWrapperRef.current = +(swapBlockWrapper.className.substring(indexIndex + 5, indexIndex + 7).trim());
             
             updateClasses();
         }
