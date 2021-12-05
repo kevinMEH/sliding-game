@@ -1,12 +1,10 @@
 # sliding-game
 
-Created by Kevin Liao from Brooklyn Technical High School
-
-Web Development Section 83 EVEN
-
 ## What is This
 
-This is a number sliding game project made using ReactJS for my Web Development class. This is my project for my level 3 project assignment.
+This is a number sliding game project made using *partially* using ReactJS.
+
+This is the first time I've used React. Although the game works and is bug free, the project does not follow the best practices for a React project. Clone at your own risk.
 
 You can play the game for yourself [here.](https://kevinmeh.github.io/sliding-game/)
 
